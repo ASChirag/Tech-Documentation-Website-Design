@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px){
+.Main-Container{
+    display: flex;
+    width: auto;
+    }
+}
+
+.navbar {
+    width: 20%;
+    border-right: 1.5px solid grey;
+    position: fixed;
+    top: 0;
+    height: auto;
+}
+
+.navbar header {
+    border-bottom: 1px solid grey;
+}
+
+.navbar ul li {
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    list-style-type: none;
+    font-size: 18px;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 50px;
+}
+
+.Doc-Header {
+    color: rgb(38, 38, 133);
+    font-weight: thin;
+    font-size: 20px;
+    align-content: right;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    padding:10px 45px;
+}
+
+.main-doc {
+    width: 70%;
+    position: relative;
+    left: 285px;
+}
+
+header {
+    color: rgb(38, 38, 133);
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 45px;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 10px;
+}
+
+p {
+    padding-left: 70px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #45464a;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.list {
+    padding-left: 120px;
+    margin: 10px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    color: #45464a;
+}
+
+.list li {
+    margin: 20px;
+}
+
+.code {
+    background-color: #f7f7f7;
+    width: 1000px;
+    height: auto;
+    position: relative;
+    left: 90px;
+    padding: 10px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.code text {
+    padding: 30px 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    color: rgb(59, 57, 57);
+}
+
+.code-indent {
+    padding: 0px 30px;
+}
+
+.List-header {
+    font-size: 14px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.Sub-list {
+    margin: 0px 40px;
+}
+
+table {
+    border: 1px solid black;
+    margin: 15px 80px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+
+table td{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
+}
+
+table th {
+    border: 1px solid black;
+    color: #161616;
+    padding: 10px 10px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #4d4e53;
+}
+
+.nav-link a {
+    padding: 30px 90px;
+}

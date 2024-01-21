@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Technical Documentation</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="Main-Container">
+            <nav class="navbar" id="navbar">
+                <header class="Doc-Header">Python Documentation</header>
+                <ul>
+                    <a class="nav-link"
+                        href="#Introduction"><li>Introduction</li></a>
+                    <a class="nav-link" href="#Hello_World!"><li>Hello
+                            World!</li></a>
+                    <a class="nav-link" href="#Data_Types"><li>Data
+                            Types</li></a>
+                    <a class="nav-link" href="#Variables"><li>Variables</li></a>
+                    <a class="nav-link" href="#Identifier_Naming"><li>Identifier
+                            Naming</li></a>
+                    <a class="nav-link"
+                        href="#Declaring_Variables"><li>Declaring
+                            Variables</li></a>
+                    <a class="nav-link" href="#if_else_Statement"><li>if else
+                            Statement</li></a>
+                    <a class="nav-link" href="#While_Statement"><li>While Statement</li></a>
+                    <a class="nav-link" href="#for_Loop"><li>for Loop</li></a>
+                </ul>
+            </nav>
+            <main class="main-doc" id="main-doc">
+                <section class="main-section" id="Introduction">
+                    <header>Introduction</header>
+                    <p>Python is a high-level, general-purpose programming
+                        language. Its design philosophy emphasizes code
+                        readability with the use of significant indentation.
+                        Python is dynamically typed and garbage-collected. It
+                        supports multiple programming paradigms, including
+                        structured, object-oriented and functional
+                        programming.</p>
+                    <ul class="list">
+                        <li>Python has a clean object-oriented design, provides
+                            enhanced process control capabilities, and possesses
+                            strong integration and text processing capabilities
+                            and its own unit testing framework, all of which
+                            contribute to the increase in its speed and
+                            productivity.</li>
+                        <li>Python is commonly used for developing websites and
+                            software, task automation, data analysis, and data
+                            visualization.</li>
+                    </ul>
+                </section>
+                <section class="main-section" id="Hello_World!">
+                    <header>Hello World!</header>
+                    <p>To get started with writing Python, open the Scratchpad
+                        and write your first "Hello world" Python code:</p>
+                    <div class="code"><text>print("Hello World!")<text></div>
+                            <p>OR</p>
+                            <div class="code"><text>def greet(name):<br></text>
+                                <text class="code-indent">return print(f"Hello
+                                    {name}")<br><br></text>
+                                <text class="code-indent">greet("User")</text>
+                            </div>
+                        </section>
+                        <section class="main-section" id="Data_Types">
+                            <header>Data Types</header>
+                            <p>Python has several built-in data types, including
+                                numeric types (int, float, complex), string
+                                (str), boolean (bool), and collection types
+                                (list, tuple, dict, set). Each data type has its
+                                own set of properties, methods, and behaviors
+                                that allow programmers to manipulate and process
+                                data effectively in their programs.</p>
+                            <ul class="list">
+                                <li class="List-header">Numeric Types:
+                                    <ul class="Sub-list">
+                                        <li>Integer</li>
+                                        <li>Float</li>
+                                        <li>Complex Number</li>
+                                    </ul>
+                                </li>
+                                <li class="List-header">Dictionary</li>
+                                <li class="List-header">Boolean</li>
+                                <li class="List-header">Set</li>
+                                <li class="List-header"> Sequence Types
+                                    <ul class="Sub-list">
+                                        <li>Strings</li>
+                                        <li>Lists</li>
+                                        <li>Tuples</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="main-section" id="Variables">
+                            <header>Variables</header>
+                            <p>A Python variable is a reserved memory location
+                                to store values. In other words, a variable in a
+                                python program gives data to the computer for
+                                processing. Every value in Python has a
+                                datatype. Different data types in Python are
+                                Numbers, List, Tuple, Strings, Dictionary,
+                                etc.</p>
+                            <p>A variable is the name given to a memory
+                                location. A value-holding Python variable is
+                                also known as an identifier.
+
+                                Since Python is an infer language that is smart
+                                enough to determine the type of a variable, we
+                                do not need to specify its type in Python.
+
+                                Variable names must begin with a letter or an
+                                underscore, but they can be a group of both
+                                letters and digits.
+
+                                The name of the variable should be written in
+                                lowercase. Both Rahul and rahul are distinct
+                                variables.</p>
+                        </section>
+                        <section class="main-section" id="Identifier_Naming">
+                            <header>Identifier Naming</header>
+                            <p>Identifiers are things like variables. An
+                                Identifier is utilized to recognize the literals
+                                utilized in the program. The standards to name
+                                an identifier are given underneath.</p>
+                            <ul class="list">
+                                <li>The variable's first character must be an
+                                    underscore or alphabet (_).</li>
+                                <li>Every one of the characters with the
+                                    exception of the main person might be a
+                                    letter set of lower-case(a-z), capitalized
+                                    (A-Z), highlight, or digit (0-9).</li>
+                                <li>White space and special characters (!, @, #,
+                                    %, etc.) are not allowed in the identifier
+                                    name.( ^, &, *).</li>
+                                <li>Identifier name should not be like any
+                                    watchword characterized in the
+                                    language.</li>
+                                <li>Names of identifiers are case-sensitive; for
+                                    instance, my name, and MyName isn't
+                                    something very similar.</li>
+                                <li>Examples of valid identifiers: a123, _n,
+                                    n_9, etc.</li>
+                                <li>Examples of invalid identifiers: 1a, n%4, n
+                                    9, etc.</li>
+                            </ul>
+                        </section>
+                        <section class="main-section" id="Declaring_Variables">
+                            <header>Declaring Variables</header>
+                            <ul class="list">
+                                <li>Python doesn't tie us to pronounce a
+                                    variable prior to involving it in the
+                                    application. It permits us to make a
+                                    variable at the necessary time.</li>
+                                <li>In Python, we don't have to explicitly
+                                    declare variables. The variable is declared
+                                    automatically whenever a value is added to
+                                    it.</li>
+                                <li>The equal (=) operator is utilized to assign
+                                    worth to a variable.</li>
+                            </ul>
+                            <div class="code"><text>a = 55</text><br>
+                                <text>name = "Chirag"</text><br><br>
+                                <text>print(a)</text><br>
+                                <text>print(name)</text>
+                            </div>
+                        </section>
+                        <section class="main-section" id="if_else_Statement">
+                            <header>if else Statement</header>
+                            <table>
+                                <thead>
+                                    <tr
+                                        style="background-color: rgb(225, 220, 220)">
+                                        <th>Statement</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="background-color: #fffdfd;">
+                                        <td><b>if Statement</b></td>
+                                        <td>The if statement is used to test a
+                                            specific condition. If the condition
+                                            is true, a block of code (if-block)
+                                            will be executed.</td>
+                                    </tr>
+                                    <tr style="background-color: #f5f5f5;">
+                                        <td><b>if-else Statement</b></td>
+                                        <td>The if-else statement is similar to
+                                            if statement except the fact that,
+                                            it also provides the block of the
+                                            code for the false case of the
+                                            condition to be checked. If the
+                                            condition provided in the if
+                                            statement is false, then the else
+                                            statement will be executed.</td>
+                                    </tr>
+                                    <tr style="background-color: #fffdfd;;">
+                                        <td><b>Nested if Statment</b></td>
+                                        <td>Nested if statements enable us to
+                                            use if ? else statement inside an
+                                            outer if statement.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p><b>Examples:</b></p>
+                            <div class="code">
+                                <text>a = 15</text><br>
+                                <text>b = 10</text><br><br>
+                                <text>if a > b:</text><br>
+                                <text>....print(f"{a} is Greater")</text><br>
+                                <text>else:</text><br>
+                                <text>....print(f"{b} is Greater")</text>
+                            </div><br><br>
+                            <div class="code">
+                                <text>n = 12</text><br>
+                                <text>if n > 10:</text><br>
+                                <text>....if n >= 12:</text><br>
+                                <text>........print(f"{n} is greater or eqaul to
+                                    12")</text>
+                            </div>
+                        </section>
+                        <section class="main-section" id="While_Statement">
+                            <header>While Statement</header>
+                            <p>A while loop is a control flow statement which repeatedly executes a block of code until the condition is satisfied. It stops executing the block only if the condition fails. One should use a 'while' loop when one needs to perform a repeated operation, but doesn't know in advance how many iterations would be needed.</p>
+                            <p><b>Syntax:</b></p>
+                            <div class="code">
+                                <text>while condition:</text><br>
+                                <text>....statement</text>
+                            </div><br>
+                            <p><b>Examples: </b></p>
+                            <div class="code">
+                                <text>i = 0</text><br>
+                                <text>while 10 > i: </text><br>
+                                <text>....print(i)</text><br>
+                                <text>....i = i + 1</text>
+                            </div>
+                            <p><b>Output: </b></p>
+                            <div class="code">
+                                <text>0</text><br>
+                                <text>1</text><br>
+                                <text>2</text><br>
+                                <text>3</text><br>
+                                <text>4</text><br>
+                                <text>5</text><br>
+                                <text>6</text><br>
+                                <text>7</text><br>
+                                <text>8</text><br>
+                                <text>9</text><br>
+                                <text>10</text><br>
+                            </div>
+                            <br><br>
+                            <div class="code">
+                                <text>name = "Chirag"</text><br>
+                                <text>i = 0</text><br>
+                                <text>while len(name) > i:</text><br>
+                                <text>....print(name[i])</text><br>
+                                <text>....i = i + 1</text>
+                            </div>
+                            <p><b>Output:</b></p>
+                            <div class="code">
+                                <text>C</text><br>
+                                <text>h</text><br>
+                                <text>i</text><br>
+                                <text>r</text><br>
+                                <text>a</text><br>
+                                <text>g</text><br>
+                            </div>
+                        </section>
+                        <section class="main-section" id="for_Loop">
+                            <header>for Loop</header>
+                            <p>A for loop in Python is a control flow statement that is used to repeatedly execute a group of statements as long as the condition is satisfied. Such a type of statement is also known as an iterative statement. Therefore, a for loop is an iterative statement.</p>
+                            <p><b>Syntax: </b></p>
+                            <div class="code">
+                                <text>for expression in iterable:</text><br>
+                                <text>....statement</text>
+                            </div><br>
+                            <p><b>Example:</b></p>
+                            <div class="code">
+                                <text>for i in range(1,11):</text><br>
+                                <text>....print(i)</text>
+                            </div>
+                            <p><b>Output:</b></p>
+                            <div class="code">
+                                <text>1</text><br>
+                                <text>2</text><br>
+                                <text>3</text><br>
+                                <text>4</text><br>
+                                <text>5</text><br>
+                                <text>6</text><br>
+                                <text>7</text><br>
+                                <text>8</text><br>
+                                <text>9</text><br>
+                                <text>10</text>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </body>
+        </html>
